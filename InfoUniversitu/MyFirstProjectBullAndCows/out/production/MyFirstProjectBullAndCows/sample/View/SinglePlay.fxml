@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootSinglePlay" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="760.0" styleClass="rootSinglePlay" stylesheets="@styleSinglePlay.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SinglePlayController">
+    <children>
+      <VBox layoutX="397.0" layoutY="92.0" prefHeight="233.0" prefWidth="179.0">
+         <children>
+            <Label fx:id="labelGuess" prefHeight="35.0" prefWidth="177.0" text="Try guess computer's number:" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Label>
+            <TextField fx:id="textFieldGuess" prefHeight="25.0" prefWidth="388.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></TextField>
+            <Button fx:id="buttonEnter" mnemonicParsing="false" onAction="#buttonEnter" prefHeight="25.0" prefWidth="185.0" text="Enter">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Button>
+            <Label fx:id="labelErrorMessage" prefHeight="36.0" prefWidth="179.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <TableView fx:id="tableView" layoutX="99.0" layoutY="7.0" prefHeight="400.0" prefWidth="267.0">
+        <columns>
+          <TableColumn fx:id="tryColumn" prefWidth="95.0" text="Try" />
+          <TableColumn fx:id="bcColumn" prefWidth="166.0" text="B/C" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

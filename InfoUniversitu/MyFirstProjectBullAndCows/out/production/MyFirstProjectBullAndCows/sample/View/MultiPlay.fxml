@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootMultiPlay" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="760.0" styleClass="rootMultiPlay" stylesheets="styleMultiPlay.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MultiPlayController">
+    <children>
+          <TableView fx:id="tableView1" layoutX="14.0" layoutY="34.0" prefHeight="348.0" prefWidth="147.0">
+              <columns>
+                  <TableColumn fx:id="bcColumn1" prefWidth="75.0" text="B/K" />
+                  <TableColumn fx:id="tryColumn1" prefWidth="75.0" text="Try" />
+              </columns>
+          </TableView>
+      <TableView fx:id="tableView2" layoutX="171.0" layoutY="34.0" prefHeight="348.0" prefWidth="153.0">
+         <columns>
+            <TableColumn fx:id="bcColumn2" prefWidth="75.0" text="B/K" />
+            <TableColumn fx:id="tryColumn2" prefWidth="77.0" text="Try" />
+         </columns>
+      </TableView>
+          <AnchorPane layoutX="423.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="205.0">
+              <children>
+                  <Button fx:id="buttonEnter1" layoutX="18.0" layoutY="100.0" mnemonicParsing="false" onAction="#buttonHandleEnter1" prefHeight="25.0" prefWidth="170.0" text="First Player" />
+                  <Label fx:id="labelGuess1" layoutX="26.0" layoutY="47.0" prefHeight="35.0" prefWidth="153.0" text="Try guess number partner" textAlignment="CENTER" wrapText="true" />
+                  <TextField fx:id="textFieldGuess1" layoutX="15.0" layoutY="144.0" prefHeight="25.0" prefWidth="171.0" />
+            <Label fx:id="user2ImaginedNumber" layoutX="80.0" layoutY="276.0" prefHeight="30.0" prefWidth="41.0" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonEnter2" layoutX="16.0" layoutY="220.0" mnemonicParsing="false" onAction="#buttonHandleEnter2" prefHeight="25.0" prefWidth="170.0" text="Second Player" />
+            <Label fx:id="labelGuess2" layoutX="26.0" layoutY="274.0" prefHeight="35.0" prefWidth="153.0" text="Try guess number partner" textAlignment="CENTER" wrapText="true" />
+            <TextField fx:id="textFieldGuess2" layoutX="15.0" layoutY="181.0" prefHeight="25.0" prefWidth="171.0" />
+            <Label fx:id="labelErrorMessage" layoutX="1.0" layoutY="341.0" prefHeight="22.0" prefWidth="203.0" />
+              </children>
+          </AnchorPane>
+      <Text layoutX="51.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Player" />
+      <Text layoutX="201.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Second Player" />
+    </children>
+    <stylesheets>
+        <URL value="@styleMultiPlay.css" />
+    </stylesheets>
+</AnchorPane>

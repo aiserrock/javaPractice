@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+
+<GridPane alignment="center" hgap="10" styleClass="rootStyleClass" vgap="10" fx:controller="fxmlexampl.FXMLDocumentController" xmlns:fx="http://javafx.com/fxml/1">
+    
+<padding><Insets bottom="10" left="25" right="25" top="25" /></padding>
+    
+    <Label fx:id="welcomeLabel" text="Добро Пожаловать" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+ 
+    <Label text="Имя пользователя:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+ 
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+ 
+    <Label text="Пароль:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+ 
+    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    
+    <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button onAction="#handleSubmitButtonAction" text="Войти" />
+    </HBox>
+
+    <Label fx:id="actiontargetLabel" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+    
+    <stylesheets>
+    <URL value="@LoginStyleSheet.css" />
+    </stylesheets>   
+
+</GridPane>

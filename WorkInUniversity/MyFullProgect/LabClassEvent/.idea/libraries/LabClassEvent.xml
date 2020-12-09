@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="LabClassEvent">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/LabClassEvent.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

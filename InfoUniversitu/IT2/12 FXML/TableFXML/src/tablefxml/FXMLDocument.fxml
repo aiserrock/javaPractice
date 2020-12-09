@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox id="vbox" prefHeight="550" prefWidth="450" spacing="15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tablefxml.FXMLDocumentController">
+    <padding>
+    <Insets bottom="25" left="25" right="25" top="25" />
+</padding>
+    <children>
+        <Label text="Organizations List" minHeight="16" minWidth="69">
+            <font>
+                <Font name="Verdana" size="24.0" />
+            </font>
+        </Label>
+        <TableView fx:id="table">
+            <columns>
+                <TableColumn prefWidth="100.0" text="Name" fx:id="nameCol" />
+                <TableColumn prefWidth="100.0" text="Boss Name" fx:id="bossNameCol" />
+                <TableColumn prefWidth="100.0" text="Personnel" fx:id="personnelCol" />
+            </columns>
+        </TableView>
+        <Button text="Add" onAction="#addButtonAction" fx:id="addButton" />
+        <Button text="Delete" onAction="#deleteButtonAction" fx:id="deleteButton" />
+    </children>
+</VBox>

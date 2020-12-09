@@ -1,0 +1,18 @@
+.root { 
+   -fx-background-color: olivedrab;
+}
+
+.fontStyle{
+    -fx-font-size: 16;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.label{
+    -fx-text-fill: blue;
+}
+ 
+.borders{
+    -fx-border-color: black;
+    -fx-border-style: dashed;
+    -fx-border-width: 2;
+} 

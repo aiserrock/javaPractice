@@ -1,0 +1,9 @@
+.label{
+    -fx-text-fill: gray;
+    -fx-background-color: #BA9797;
+    -fx-font-size: 16;
+    -fx-font-family: "Comic Sans MS";
+    -fx-border-color: black;
+    -fx-border-style: dashed;
+    -fx-border-width: 2;
+}

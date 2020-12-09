@@ -1,0 +1,5 @@
+Kalipso 1200 Smith
+DoggyStyle 150 Johnson
+Galaxy 25 Williams
+Bubble 0 Jones
+Kangaroo 560 Brown

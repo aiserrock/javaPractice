@@ -1,0 +1,3 @@
+﻿Petr 15 1 -1 -1 -1 Math 4 RusLan 5 History 5 Geography 4 EnglLan 5 Physics 4 
+Ivan 13 1 1 -1 -1 RusLan 4 Math 5 History 4 EnglLan 4 Geography 5 Physics 4 Chemistry 5 
+Ann 14 1 1 -1 -1 History 5 EnglLan 5 Math 5 RusLan 5 Biology 5 Chemistry 5 Physics 5 Geography 5

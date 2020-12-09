@@ -1,0 +1,3 @@
+Petr Ivanov 4 5 4 0
+Ivan Sidorov 3 4 5 2 3
+Vasily Petrov 5 5 5 5

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane alignment="center" hgap="10" vgap="10" prefHeight="200.0" prefWidth="360.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tablefxml.OrganizationAddDialogController">
+    <padding>
+        <Insets bottom="25" left="25" right="25" top="25" />
+    </padding>
+    <Label text="Name" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="addName" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Label text="Boss Name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="addBossName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Label text="Personnel" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <TextField fx:id="addPersonnel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <HBox GridPane.columnIndex="1" GridPane.rowIndex="3" >
+        <children>
+            <Button mnemonicParsing="false" onAction="#handleOk" prefWidth="90.0" text="OK" />
+            <Button mnemonicParsing="false" onAction="#handleCancel" prefWidth="90.0" text="Cancel" />
+        </children>
+    </HBox>
+</GridPane>

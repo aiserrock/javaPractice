@@ -1,0 +1,4 @@
+1   a number expressing the central or typical value in a set of data, 
+2   in particular the mode, median, or (most commonly) the mean, 
+3   which is calculated by dividing the sum of the values 
+4   in the set by their number.

@@ -1,0 +1,13 @@
+.label{
+    -fx-text-fill: blue;
+    -fx-background-color: #FF00C8;
+    -fx-font-size: 16;
+    -fx-font-family: "Comic Sans MS";
+}
+ 
+.l1{
+  -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, aqua 0%, red 100%);
+    -fx-border-color: black;
+    -fx-border-style: dashed;
+    -fx-border-width: 2;
+} 

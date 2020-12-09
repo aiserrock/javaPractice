@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="450.0" prefWidth="760.0" stylesheets="@styleMainWindow.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+      <HBox fx:id="hmenu" centerShape="false" prefHeight="25.0" prefWidth="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <MenuBar fx:id="menuBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="29.0" prefWidth="772.0" styleClass="menuBar">
+                  <menus>
+                      <Menu fx:id="file" mnemonicParsing="false" text="File">
+                          <items>
+                        <MenuItem fx:id="menuitem" mnemonicParsing="false" onAction="#handleFileGoToHome" styleClass="styleMainWindow" text="Home" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleFileExit" text="Close" />
+                          </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#handleAboutGame" text="About game" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleAboutProgram" text="About program" />
+                          </items>
+                      </Menu>
+                  </menus>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+              </MenuBar>
+         </children>
+      </HBox>
+          <VBox fx:id="vBox" alignment="BASELINE_CENTER" layoutX="308.0" layoutY="96.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="143.0" spacing="15.0" AnchorPane.leftAnchor="308.0" AnchorPane.topAnchor="96.0">
+              <children>
+            <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bullandcows.png" />
+               </image>
+            </ImageView>
+                  <Button fx:id="parentAllButton" mnemonicParsing="false" onAction="#handleFilePlay" prefHeight="27.0" prefWidth="95.0" styleClass="parentAllButton" text="Play" />
+                  <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="95.0" styleClass="parentAllButton" text="Rating" />
+                  <Button mnemonicParsing="false" onAction="#handleFileExit" prefHeight="27.0" prefWidth="94.0" styleClass="parentAllButton" text="Close" />
+              </children>
+          </VBox>
+    </children>
+</AnchorPane>
